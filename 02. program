@@ -1,0 +1,16 @@
+pragma solidity ^0.6.3;
+
+contract SolidityTest{
+    
+    constructor() public {  
+    } 
+    
+    function GetResult() public view returns (uint256)
+    {
+        uint256 a = 12;
+        uint256 b = 15;
+        uint256 result = a+b;
+        return result;
+    }
+  
+}

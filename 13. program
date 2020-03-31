@@ -1,0 +1,9 @@
+pragma solidity ^0.6.0;
+
+// Cryptographic Functions 
+
+contract Test {   
+   function callKeccak256() public pure returns(bytes32 result){
+      return keccak256("ABC");
+   }  
+}

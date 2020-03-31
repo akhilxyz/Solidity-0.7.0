@@ -1,0 +1,24 @@
+pragma solidity ^0.6.3;
+
+contract MyContract {
+    Person[] public people;
+
+    uint256 public peopleCount;
+
+    struct Person {
+        string _firstName;
+        string _lastName;
+    }
+        
+    // it'll add the Person in array Person[] ;
+    
+    function addPerson(string memory _firstName, string memory _lastName) public {
+        
+    // it'll call the Person from index value
+    
+        people.push(Person(_firstName, _lastName));
+        
+    // it'll Count the total number of peoples     
+        peopleCount += 1;
+    }
+}

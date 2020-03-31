@@ -1,0 +1,22 @@
+pragma solidity ^0.6.3;
+
+contract MyContract {
+    uint256 peopleCount = 0;
+    
+    
+    
+    //  mapping  allows us to store key-value pairs.
+    
+    mapping(uint => Person) public people;
+
+    struct Person {
+        uint id;
+        string firstName;
+        string lastName;
+    }
+    
+    function addPerson(string memory firstName, string memory lastName) public {
+        peopleCount += 1;
+        people[peopleCount] = Person(peopleCount, firstName, lastName);
+    }
+}
