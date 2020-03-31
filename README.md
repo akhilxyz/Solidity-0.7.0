@@ -12,7 +12,7 @@ Be careful with using Unicode text, as similar looking (or even identical) chara
 
 All identifiers (contract names, function names and variable names) are restricted to the ASCII character set. It is possible to store UTF-8 encoded data in string variables.
 
-## Solidity Types: Main Tips
+## Solidity Types : Main Tips
 ► Solidity value types include booleans, integers, fixed point numbers, addresses, contract types, 
   fixed-size byte arrays, rational and integer literals, and enums.
   
